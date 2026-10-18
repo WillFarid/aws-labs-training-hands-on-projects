@@ -1,1 +1,1 @@
-# hands-on---aws-labs-training
+# hands-on-aws-labs-training
