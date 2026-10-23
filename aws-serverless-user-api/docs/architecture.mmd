@@ -1,0 +1,5 @@
+flowchart LR
+    Client([Client]) -->|"GET /users + x-api-key"| APIGW[API Gateway<br/>REST API]
+    APIGW -->|Lambda proxy| Fn[Lambda<br/>Python 3.12]
+    Fn -->|"Scan (read-only IAM)"| DDB[(DynamoDB<br/>Users table)]
+    Fn -.->|logs| CW[CloudWatch Logs]
