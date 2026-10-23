@@ -1,1 +1,1 @@
-# hands-on-aws-labs-training-project work
+# hands-on-aws-labs-training and project work
